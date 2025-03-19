@@ -40,6 +40,8 @@
               <!-- You can update this with your own profile image -->
               <a href="#"><img src="assets/images/author-image.jpg" alt="Profile Image" /></a>
             </div>
+
+            
             <div class="author-content">
               <h4>Sri Phani Deverakonda</h4>
               <span>Telecommunications & Cybersecurity Engineer</span>
@@ -109,7 +111,7 @@
               </div>
             </div>
           </div>
-          <!-- Additional about me post if needed -->
+          <!-- Additional About Me post -->
           <div class="right-image-post">
             <div class="row">
               <div class="col-md-6">
@@ -200,8 +202,8 @@
           </div>
           <div class="row">
             <div class="isotope-wrapper">
-              <!-- You can update or add portfolio items as needed -->
               <div class="isotope-box">
+                <!-- Regular Portfolio Items -->
                 <!-- TCP Chat System -->
                 <div class="isotope-item" data-type="web">
                   <figure class="snip1321">
@@ -224,47 +226,52 @@
                     </figcaption>
                   </figure>
                 </div>
-                <!-- Maze Solver using Genetic Algorithms -->
-                <div class="isotope-item" data-type="ai">
+                <!-- Firewall Management -->
+                <div class="isotope-item" data-type="security">
+                  <figure class="snip1321">
+                    <img src="assets/images/portfolio-05.jpg" alt="Firewall Management" />
+                    <figcaption>
+                      <a href="assets/images/portfolio-05.jpg" data-lightbox="image-1" data-title="Firewall Management"><i class="fa fa-search"></i></a>
+                      <h4>Firewall Management</h4>
+                      <span>Optimized configuration of Cisco ASA & FortiGate firewalls</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Highlighted Sub-Section: My Freelance Experience -->
+          <div class="container" style="margin-top:50px;">
+            <div class="section-heading">
+              <h2>My Freelance Experience</h2>
+              <div class="line-dec"></div>
+              <span>
+                Freelance projects showcasing my expertise in simulation and AI-driven problem solving.
+              </span>
+            </div>
+            <div class="row">
+              <!-- Maze Solver using Genetic Algorithms -->
+              <div class="col-md-6">
+                <div class="freelance-item">
                   <figure class="snip1321">
                     <img src="assets/images/portfolio-03.jpg" alt="Maze Solver" />
                     <figcaption>
-                      <a href="assets/images/portfolio-03.jpg" data-lightbox="image-1" data-title="Maze Solver"><i class="fa fa-search"></i></a>
-                      <h4>Maze Solver</h4>
-                      <span>Python solution integrating BFS, DFS, and Genetic Algorithms</span>
+                      <a href="assets/images/portfolio-03.jpg" data-lightbox="image-2" data-title="Maze Solver using Genetic Algorithms"><i class="fa fa-search"></i></a>
+                      <h4>Maze Solver using Genetic Algorithms</h4>
+                      <span>Python solution integrating BFS, DFS, and Genetic Algorithms for optimization</span>
                     </figcaption>
                   </figure>
                 </div>
-                <!-- Queue Dynamics of Communication System -->
-                <div class="isotope-item" data-type="simulation">
+              </div>
+              <!-- Queue Dynamics of Communication System (MATLAB Project) -->
+              <div class="col-md-6">
+                <div class="freelance-item">
                   <figure class="snip1321">
                     <img src="assets/images/portfolio-04.jpg" alt="Queue Dynamics" />
                     <figcaption>
-                      <a href="assets/images/portfolio-04.jpg" data-lightbox="image-1" data-title="Queue Dynamics"><i class="fa fa-search"></i></a>
-                      <h4>Queue Dynamics</h4>
-                      <span>Optimization using MATLAB and Simulink</span>
-                    </figcaption>
-                  </figure>
-                </div>
-                <!-- Firewall & Network Automation -->
-                <div class="isotope-item" data-type="security">
-                  <figure class="snip1321">
-                    <img src="assets/images/portfolio-05.jpg" alt="Firewall & Automation" />
-                    <figcaption>
-                      <a href="assets/images/portfolio-05.jpg" data-lightbox="image-1" data-title="Firewall & Automation"><i class="fa fa-search"></i></a>
-                      <h4>Firewall Management</h4>
-                      <span>Configuration and optimization of Cisco ASA & FortiGate firewalls</span>
-                    </figcaption>
-                  </figure>
-                </div>
-                <!-- IoT & Smart Home Automation -->
-                <div class="isotope-item" data-type="iot">
-                  <figure class="snip1321">
-                    <img src="assets/images/portfolio-06.jpg" alt="IoT Solutions" />
-                    <figcaption>
-                      <a href="assets/images/portfolio-06.jpg" data-lightbox="image-1" data-title="IoT Solutions"><i class="fa fa-search"></i></a>
-                      <h4>Smart Home Automation</h4>
-                      <span>IoT-based solutions for home automation and solar panel protection</span>
+                      <a href="assets/images/portfolio-04.jpg" data-lightbox="image-2" data-title="Queue Dynamics of Communication System"><i class="fa fa-search"></i></a>
+                      <h4>Queue Dynamics of Communication System</h4>
+                      <span>Optimized communication system queues using MATLAB and Simulink</span>
                     </figcaption>
                   </figure>
                 </div>
@@ -373,15 +380,11 @@
 
       var showSection = function showSection(section, isAnimate) {
         var direction = section.replace(/#/, ""),
-          reqSection = $(".section").filter(
-            '[data-section="' + direction + '"]'
-          ),
+          reqSection = $(".section").filter('[data-section="' + direction + '"]'),
           reqSectionPos = reqSection.offset().top;
         if (isAnimate) {
           $("body, html").animate(
-            {
-              scrollTop: reqSectionPos
-            },
+            { scrollTop: reqSectionPos },
             800
           );
         } else {
@@ -398,11 +401,9 @@
           if (topEdge < wScroll && bottomEdge > wScroll) {
             var currentId = $this.data("section"),
               reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-            reqLink
-              .closest("li")
+            reqLink.closest("li")
               .addClass("active")
-              .siblings()
-              .removeClass("active");
+              .siblings().removeClass("active");
           }
         });
       };
