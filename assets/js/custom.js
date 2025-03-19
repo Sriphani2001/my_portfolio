@@ -67,6 +67,13 @@
 
     $(this).on("change", filter);
     filter();
+    // Attach smooth scrolling behavior to any anchor inside .white-button
+$(".white-button a").on("click", function(e) {
+  e.preventDefault();
+  var target = $(this).attr("href");
+  showSection(target, true);
+});
+
   });
 
   lightbox.option({
