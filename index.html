@@ -2,435 +2,802 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="Portfolio of Sri Phani Deverakonda" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Sri Phani Deverakonda - Cybersecurity & Network Engineer specializing in Defensive Engineering Systems, backend APIs, and AI threat modeling." />
     <meta name="author" content="Sri Phani Deverakonda" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
-
-    <title>Sri Phani Deverakonda - Portfolio</title>
-    <!--
-      Reflux Template
-      https://templatemo.com/tm-531-reflux
-    -->
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
-    <link rel="stylesheet" href="assets/css/owl.css" />
-    <link rel="stylesheet" href="assets/css/lightbox.css" />
+    <title>Sri Phani Deverakonda | Defensive Engineering Systems</title>
+    
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
-    <div id="page-wraper">
-      <!-- Sidebar Menu -->
-      <div class="responsive-nav">
-        <i class="fa fa-bars" id="menu-toggle"></i>
-        <div id="menu" class="menu">
-          <i class="fa fa-times" id="menu-close"></i>
-          <div class="container">
-            <div class="image">
-              <!-- You can update this with your own profile image -->
-              <a href="#"><img src="assets/images/author-image.jpg" alt="Profile Image" /></a>
-            </div>
+    <!-- Background grid elements -->
+    <div class="bg-grid"></div>
+    <div class="bg-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
 
-            
-            <div class="author-content">
-              <h4>Sri Phani Deverakonda</h4>
-              <span>Telecommunications & Cybersecurity Engineer</span>
+    <!-- Navigation Header -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="logo">
+          <span>SP</span>Deverakonda<div class="logo-dot"></div>
+        </a>
+        <nav class="nav-menu-wrapper">
+          <ul class="nav-menu">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#soc-triage" class="nav-link">SOC Simulator</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <!-- Network interactive particle background canvas -->
+      <canvas id="network-canvas"></canvas>
+      
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-info">
+            <span class="accent-text">System initialization complete</span>
+            <h1 class="hero-title">
+              <span class="text-gradient-cyan">Sri Phani</span><br />
+              <span class="text-gradient-rainbow">Deverakonda</span>
+            </h1>
+            <p class="hero-subtitle">
+              Cybersecurity & Network Engineer with backend and AI/ML expertise, focused on building <strong>secure, scalable, and intelligent systems</strong>.
+            </p>
+            <div class="hero-ctas">
+              <a href="#projects" class="btn btn-primary">
+                Explore Projects
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#soc-triage" class="btn btn-secondary">
+                Triage Sandbox
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </a>
             </div>
-            <nav class="main-nav" role="navigation">
-              <ul class="main-menu">
-                <li><a href="#section1">About Me</a></li>
-                <li><a href="#section2">My Skills</a></li>
-                <li><a href="#section3">My Work</a></li>
-                <li><a href="#section4">Contact Me</a></li>
-              </ul>
-            </nav>
-            <div class="social-network">
-              <ul class="soial-icons">
-                <li>
-                  <a href="https://fb.com/yourprofile"
-                    ><i class="fa fa-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/yourprofile"
-                    ><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="https://linkedin.com/in/yourprofile"
-                    ><i class="fa fa-linkedin"></i></a>
-                </li>
-                <li>
-                  <a href="https://github.com/Sriphani2001"
-                    ><i class="fa fa-github"></i></a>
-                </li>
-              </ul>
+            <div class="hero-socials">
+              <span style="font-size: 0.85rem; font-family: var(--font-mono); color: var(--text-dark);">CONNECT:</span>
+              <a href="https://github.com/Sriphani2001" target="_blank" class="social-icon" aria-label="GitHub">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon" aria-label="LinkedIn">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
             </div>
-            <div class="copyright-text">
-              <p>© 2025 Sri Phani Deverakonda</p>
+          </div>
+          
+          <div class="terminal-wrapper">
+            <div class="terminal-card">
+              <div class="terminal-header">
+                <div class="terminal-buttons">
+                  <div class="terminal-dot dot-red"></div>
+                  <div class="terminal-dot dot-yellow"></div>
+                  <div class="terminal-dot dot-green"></div>
+                </div>
+                <div class="terminal-title">
+                  <svg class="svg-icon" style="width: 14px; height: 14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="4 17 10 11 4 5"></polyline>
+                    <line x1="12" y1="19" x2="20" y2="19"></line>
+                  </svg>
+                  bash --session
+                </div>
+              </div>
+              <div class="terminal-body" id="terminal-body">
+                <!-- Javascript will load console lines here -->
+              </div>
+              <div class="terminal-header" style="border-top: 1px solid var(--panel-border); border-bottom: none;">
+                <div class="terminal-input-line" style="width: 100%;">
+                  <span class="terminal-prompt">guest@spd-node:~$</span>
+                  <input type="text" id="terminal-input" class="terminal-input" placeholder="type 'help'..." autocomplete="off" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- About Me Section -->
-      <section class="section about-me" data-section="section1">
-        <div class="container">
-          <div class="section-heading">
-            <h2>About Me</h2>
-            <div class="line-dec"></div>
-            <span>
-              I am a Master’s Telecommunications Engineer with a robust background in network automation, cloud infrastructure, and cybersecurity. Combining experience from DevOps, cybersecurity, and electrical engineering, I have designed scalable solutions for intrusion detection, load balancing, IoT, and more.
-            </span>
+    <!-- About Section -->
+    <section id="about" style="position: relative;">
+      <div class="container">
+        <div class="identity-grid">
+          <div class="identity-image-wrapper">
+            <!-- Uses existing profile picture from assets -->
+            <img src="assets/images/author-image.jpg" alt="Sri Phani Deverakonda Profile" class="identity-image" />
+            <div class="identity-badge">
+              <span class="identity-badge-title">CURRENT STATUS</span>
+              <span class="identity-badge-value">Active Ops (Sec/Noc)</span>
+            </div>
           </div>
-          <div class="left-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-image">
-                  <img src="assets/images/left-image.jpg" alt="About Me Image" />
-                </div>
+          <div class="identity-content">
+            <span class="accent-text">Core Positioning</span>
+            <h2 class="section-title">Defensive Engineering</h2>
+            <p class="identity-quote">
+              "I design and secure systems across network, backend, and AI layers — from traffic-level analysis and SOC operations to building intelligent detection systems and scalable infrastructure."
+            </p>
+            <p style="color: var(--text-muted); margin-bottom: 20px;">
+              Combining network engineering (L1 troubleshooting, OSPF/BGP routing layouts, and traffic forensics) with deep-seated security methodologies (IDS tuning, SIEM alert triage, and vulnerability assessments) creates a unified barrier against modern infrastructure threats.
+            </p>
+            <div class="identity-formula">
+              <div class="identity-formula-title">Integrated Identity Matrix</div>
+              <div class="identity-formula-code">
+                <span>Security</span>
+                <span>+</span>
+                <span>Networks</span>
+                <span>+</span>
+                <span>Backend</span>
+                <span>+</span>
+                <span>AI</span>
+                <span class="equals">=</span>
+                <span class="result">Defensive Engineering Systems</span>
               </div>
-              <div class="col-md-6">
-                <div class="right-text">
-                  <h4>Sri Phani Deverakonda</h4>
-                  <p>
-                    With expertise in deploying secure solutions on AWS and Azure, I specialize in network automation, firewall management, and advanced threat detection. My work spans designing Intrusion Detection Systems using Machine Learning, configuring load balancers and firewalls, and developing innovative IoT-based systems.
-                  </p>
-                  <div class="white-button">
-                    <a href="#section4">Contact Me</a>
-                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="background: rgba(12, 16, 32, 0.35);">
+      <div class="container">
+        <div class="section-heading" style="text-align: center; margin-bottom: 50px;">
+          <span class="accent-text">Operational Capability Matrix</span>
+          <h2 class="section-title">Core Strengths</h2>
+        </div>
+        
+        <div class="skills-grid">
+          <!-- Cybersecurity -->
+          <div class="skills-category-card">
+            <div class="skills-card-header">
+              <div class="skills-icon-box">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+              <h3 class="skills-card-title">Cybersecurity</h3>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">
+              Threat assessment, alert monitoring, and structural defense planning using real-time log engines.
+            </p>
+            <div class="skills-list">
+              <span class="skill-tag">Splunk SIEM</span>
+              <span class="skill-tag">Alert Triage (L1)</span>
+              <span class="skill-tag">Incident Response</span>
+              <span class="skill-tag">OWASP Top 10</span>
+              <span class="skill-tag">Burp Suite</span>
+              <span class="skill-tag">OWASP ZAP</span>
+              <span class="skill-tag">Snort IDS/IPS</span>
+              <span class="skill-tag">MITRE ATT&CK Matrix</span>
+            </div>
+            <div class="skills-rating-container">
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-name">SOC Monitoring & Triage</span>
+                  <span class="skill-bar-pct">90%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="background: var(--color-cyan);" data-percentage="90"></div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Additional About Me post -->
-          <div class="right-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-text">
-                  <h4>My Professional Journey</h4>
-                  <p>
-                    I have been involved in a wide range of projects—from developing a multi-client TCP chat system and SNMP prober script to implementing firewall management systems and IoT solutions for solar panel protection. My academic excellence has been recognized with a scholarship, and my freelance work includes a maze solver using DFS, BFS, and genetic algorithms, as well as an adaptive server simulation in MATLAB.
-                  </p>
-                  <div class="white-button">
-                    <a href="#section3">See My Work</a>
-                  </div>
+
+          <!-- Network Engineering -->
+          <div class="skills-category-card">
+            <div class="skills-card-header">
+              <div class="skills-icon-box">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M3 12h3M18 12h3M12 3v3M12 18v3"></path>
+                  <path d="M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"></path>
+                </svg>
+              </div>
+              <h3 class="skills-card-title">Network Engineering</h3>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">
+              Architecting secure topology layouts, path optimizations, routing protocols, and diagnostic analysis.
+            </p>
+            <div class="skills-list">
+              <span class="skill-tag">TCP/IP & OSI Models</span>
+              <span class="skill-tag">VLANs & Subnetting</span>
+              <span class="skill-tag">NAT / ARP / ICMP</span>
+              <span class="skill-tag">Routing (OSPF, BGP)</span>
+              <span class="skill-tag">Cisco Packet Tracer</span>
+              <span class="skill-tag">Wireshark Forensics</span>
+              <span class="skill-tag">tcpdump Capture</span>
+              <span class="skill-tag">IPsec VPN (IKEv2)</span>
+              <span class="skill-tag">PKI (X.509)</span>
+            </div>
+            <div class="skills-rating-container">
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-name">Diagnostics & Routing Configurations</span>
+                  <span class="skill-bar-pct">85%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="background: var(--color-green);" data-percentage="85"></div>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="right-image">
-                  <img src="assets/images/right-image.jpg" alt="Professional Journey" />
+            </div>
+          </div>
+
+          <!-- Backend Systems -->
+          <div class="skills-category-card">
+            <div class="skills-card-header">
+              <div class="skills-icon-box">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="skills-card-title">Backend & Systems</h3>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">
+              Developing asynchronous client-server infrastructures with cryptographic validation pipelines.
+            </p>
+            <div class="skills-list">
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">RBAC Rules</span>
+              <span class="skill-tag">Data Cryptography</span>
+              <span class="skill-tag">Async Python</span>
+              <span class="skill-tag">Socket Programming</span>
+              <span class="skill-tag">Postman Test Harness</span>
+              <span class="skill-tag">Concurrent Workflows</span>
+            </div>
+            <div class="skills-rating-container">
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-name">API Engineering & Cryptography</span>
+                  <span class="skill-bar-pct">80%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="background: var(--color-violet);" data-percentage="80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI/ML & DevOps -->
+          <div class="skills-category-card">
+            <div class="skills-card-header">
+              <div class="skills-icon-box">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <h3 class="skills-card-title">AI/ML & DevOps</h3>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">
+              Using advanced models for traffic pattern checks, coupled with infrastructure-as-code automation.
+            </p>
+            <div class="skills-list">
+              <span class="skill-tag">Deep Learning (CNN/LSTM)</span>
+              <span class="skill-tag">LightGBM & KNN</span>
+              <span class="skill-tag">SHAP Explainability</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">OpenStack</span>
+              <span class="skill-tag">Ansible Automation</span>
+              <span class="skill-tag">Prometheus & Grafana</span>
+              <span class="skill-tag">Nginx & HAProxy</span>
+            </div>
+            <div class="skills-rating-container">
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-info">
+                  <span class="skill-bar-name">Model Deployment & Monitoring</span>
+                  <span class="skill-bar-pct">75%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="background: #3b82f6;" data-percentage="75"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- My Skills Section -->
-      <section class="section my-services" data-section="section2">
-        <div class="container">
-          <div class="section-heading">
-            <h2>My Skills</h2>
-            <div class="line-dec"></div>
-            <span>
-              A versatile skill set in telecommunications, DevOps, and cybersecurity. I excel in both technical and analytical aspects of designing and deploying secure, scalable systems.
-            </span>
-          </div>
-          <div class="row">
-            <!-- Skill 1 -->
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="first-service-icon service-icon"></div>
-                <h4>Programming & Scripting</h4>
-                <p>
-                  Proficient in Python, Bash, C, and C++ for developing robust applications and automation scripts.
-                </p>
-              </div>
-            </div>
-            <!-- Skill 2 -->
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="second-service-icon service-icon"></div>
-                <h4>Cloud & DevOps</h4>
-                <p>
-                  Skilled in AWS, Azure, Docker, Kubernetes, Ansible, Jenkins, and CI/CD automation for deploying scalable and secure systems.
-                </p>
-              </div>
-            </div>
-            <!-- Skill 3 -->
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="third-service-icon service-icon"></div>
-                <h4>Cybersecurity & Network Security</h4>
-                <p>
-                  Expertise in threat detection, IDS/IPS (Snort), firewall management (Cisco ASA, FortiGate), penetration testing, and network monitoring tools like Wireshark and TCP Dump.
-                </p>
-              </div>
-            </div>
-            <!-- Skill 4 -->
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="fourth-service-icon service-icon"></div>
-                <h4>Data Analysis & Simulation</h4>
-                <p>
-                  Experience with MATLAB, Simulink, and machine learning frameworks (TensorFlow, PyTorch) for data-driven decision making and simulation.
-                </p>
-              </div>
-            </div>
-          </div>
+    <!-- SOC Triage Simulator Section -->
+    <section id="soc-triage" style="position: relative;">
+      <div class="container">
+        <div class="section-heading" style="text-align: center; margin-bottom: 20px;">
+          <span class="accent-text">Defensive Engineering Demonstration</span>
+          <h2 class="section-title">SOC Triage Sandbox</h2>
+          <p class="section-desc" style="margin: 15px auto 40px;">
+            Simulate real L1 incident response, logs analysis, and threat mitigation steps. Select an alert from the SIEM monitor list to begin triaging.
+          </p>
         </div>
-      </section>
-
-      <!-- My Work / Projects Section -->
-      <section class="section my-work" data-section="section3">
-        <div class="container">
-          <div class="section-heading">
-            <h2>My Work</h2>
-            <div class="line-dec"></div>
-            <span>
-              A selection of projects that demonstrate my technical expertise and innovative approach.
-            </span>
-          </div>
-          <div class="row">
-            <div class="isotope-wrapper">
-              <div class="isotope-box">
-                <!-- Regular Portfolio Items -->
-                 <!-- Master’s Thesis Portfolio Item -->
-<div class="isotope-item" data-type="web">
-  <figure class="snip1321">
-    <img src="assets/images/por.webp" alt="Intrusion Detection System for HTTP Flood Attack" />
-    <figcaption>
-      <a href="assets/images/por.webp" data-lightbox="image-1" data-title="Intrusion Detection System for HTTP Flood Attack"><i class="fa fa-search"></i></a>
-      <h4>Intrusion Detection System</h4>
-      <span>Master’s Thesis – HTTP Flood Attack Detection using ML models</span>
-      <p>
-      </p>
-    </figcaption>
-  </figure>
-</div>
-
-                
-                <!-- TCP Chat System -->
-                <div class="isotope-item" data-type="web">
-                  <figure class="snip1321">
-                    <img src="assets/images/portfolio-01.png" alt="TCP Chat System" />
-                    <figcaption>
-                      <a href="assets/images/portfolio-01.png" data-lightbox="image-1" data-title="TCP Chat System"><i class="fa fa-search"></i></a>
-                      <h4>TCP Chat System</h4>
-                      <span>Multi-client chat system with advanced socket programming</span>
-                    </figcaption>
-                  </figure>
-                </div>
-                <!-- SNMP Prober Script -->
-                <div class="isotope-item" data-type="automation">
-                  <figure class="snip1321">
-                    <img src="assets/images/portfolio-02.jpg" alt="SNMP Prober Script" />
-                    <figcaption>
-                      <a href="assets/images/portfolio-02.jpg" data-lightbox="image-1" data-title="SNMP Prober Script"><i class="fa fa-search"></i></a>
-                      <h4>SNMP Prober Script</h4>
-                      <span>Script for probing SNMP agents and monitoring network metrics</span>
-                    </figcaption>
-                  </figure>
-                </div>
-                <!-- Firewall Management -->
-                <div class="isotope-item" data-type="security">
-                  <figure class="snip1321">
-                    <img src="assets/images/portfolio-05.webp" alt="Firewall Management" />
-                    <figcaption>
-                      <a href="assets/images/portfolio-05.webp" data-lightbox="image-1" data-title="Firewall Management"><i class="fa fa-search"></i></a>
-                      <h4>Firewall Management</h4>
-                      <span>Optimized configuration of Cisco ASA firewall</span>
-                    </figcaption>
-                  </figure>
-                </div>
+        
+        <div class="soc-wrapper">
+          <div class="soc-simulator">
+            <div class="soc-bar">
+              <div class="soc-status-cluster">
+                <span class="soc-status-indicator">
+                  <span class="soc-status-dot"></span>
+                  <span id="soc-status-text">MONITORING SIEM LOGS</span>
+                </span>
+                <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-dark);">node: spd-soc-core</span>
+              </div>
+              <div class="soc-controls">
+                <button class="soc-btn" id="trigger-alert-btn">⚡ Reset Alerts</button>
               </div>
             </div>
-          </div>
-          <!-- Highlighted Sub-Section: My Freelance Experience -->
-          <div class="container" style="margin-top:50px;">
-            <div class="section-heading">
-              <h2>My Freelance Experience</h2>
-              <div class="line-dec"></div>
-              <span>
-                Freelance projects showcasing my expertise in simulation and AI-driven problem solving.
-              </span>
-            </div>
-            <div class="row">
-              <!-- Maze Solver using Genetic Algorithms -->
-              <div class="col-md-6">
-                <div class="freelance-item">
-                  <figure class="snip1321">
-                    <img src="assets/images/portfolio-03.jpg" alt="Maze Solver" />
-                    <figcaption>
-                      <a href="assets/images/portfolio-03.jpg" data-lightbox="image-2" data-title="Maze Solver using Genetic Algorithms"><i class="fa fa-search"></i></a>
-                      <h4>Maze Solver using Genetic Algorithms</h4>
-                      <span>Python solution integrating BFS, DFS, and Genetic Algorithms for optimization</span>
-                    </figcaption>
-                  </figure>
+            
+            <div class="soc-grid">
+              <!-- Alerts List Panel -->
+              <div class="soc-alerts-panel">
+                <div class="soc-panel-header">
+                  <span>ACTIVE SIEM ALERTS</span>
+                  <span>COUNT: 3</span>
+                </div>
+                <div class="soc-alerts-list" id="soc-alerts-list">
+                  <!-- JS inserts alert elements here -->
                 </div>
               </div>
-              <!-- Queue Dynamics of Communication System (MATLAB Project) -->
-              <div class="col-md-6">
-                <div class="freelance-item">
-                  <figure class="snip1321">
-                    <img src="assets/images/portfolio-04.jpg" alt="Queue Dynamics" />
-                    <figcaption>
-                      <a href="assets/images/portfolio-04.jpg" data-lightbox="image-2" data-title="Queue Dynamics of Communication System"><i class="fa fa-search"></i></a>
-                      <h4>Queue Dynamics of Communication System</h4>
-                      <span>Optimized communication system queues using MATLAB and Simulink</span>
-                    </figcaption>
-                  </figure>
+              
+              <!-- Triage detail panel -->
+              <div class="soc-details-panel" id="soc-details-panel">
+                <!-- JS inserts detailed content based on selection -->
+                <div class="soc-details-empty">
+                  <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  <span>SELECT A SIEM ALERT TO INITIATE TRIAGE WORKFLOW</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Contact Me Section -->
-      <section class="section contact-me" data-section="section4">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Contact Me</h2>
-            <div class="line-dec"></div>
-            <span>
-              If you would like to discuss projects or collaboration opportunities, please get in touch!
-            </span>
-          </div>
-          <div class="row">
-            <div class="right-content">
-              <div class="container">
-                <form id="contact" action="" method="post">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="name"
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          placeholder="Your name..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="email"
-                          type="text"
-                          class="form-control"
-                          id="email"
-                          placeholder="Your email..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input
-                          name="subject"
-                          type="text"
-                          class="form-control"
-                          id="subject"
-                          placeholder="Subject..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <textarea
-                          name="message"
-                          rows="6"
-                          class="form-control"
-                          id="message"
-                          placeholder="Your message..."
-                          required=""
-                        ></textarea>
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="button">
-                          Send Message
-                        </button>
-                      </fieldset>
-                    </div>
-                  </div>
-                </form>
-                <div class="contact-info" style="margin-top:20px;">
-                  <p><strong>Email:</strong> phanidatta0406@gmail.com</p>
-                  <p><strong>Phone:</strong> +46 705494589</p>
-                  <p><strong>GitHub:</strong> <a href="https://github.com/Sriphani2001" target="_blank">github.com/Sriphani2001</a></p>
+    <!-- Experience Section -->
+    <section id="experience" style="background: rgba(12, 16, 32, 0.35);">
+      <div class="container">
+        <div class="section-heading" style="text-align: center; margin-bottom: 50px;">
+          <span class="accent-text">Professional Record</span>
+          <h2 class="section-title">Work Experience</h2>
+        </div>
+        
+        <div class="timeline-section-grid">
+          <!-- Work Experience Timeline -->
+          <div class="timeline-container">
+            <!-- Intern 1 -->
+            <div class="timeline-item">
+              <div class="timeline-dot-indicator"></div>
+              <div class="timeline-item-card">
+                <div class="timeline-meta">
+                  <span class="timeline-tag">NETWORKING / SUPPORT</span>
+                  <span class="timeline-period">RECENT</span>
                 </div>
+                <h3 class="timeline-role">Network Engineer L1 Intern</h3>
+                <div class="timeline-org">
+                  <svg class="svg-icon" style="width: 16px; height: 16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                  Infrastructure Operations & Client Services
+                </div>
+                <ul class="timeline-bullets">
+                  <li>Performed real L1 network troubleshooting and incident triage, resolving routing discrepancies and connection drops.</li>
+                  <li>Managed client ticket flows, verifying SLA boundaries and handling structured escalation paths to L2/L3 engineers.</li>
+                  <li>Created diagnostics documentation and playbooks, reducing time-to-resolution for recurrent network issues.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Intern 2 -->
+            <div class="timeline-item">
+              <div class="timeline-dot-indicator"></div>
+              <div class="timeline-item-card">
+                <div class="timeline-meta">
+                  <span class="timeline-tag">CYBERSECURITY</span>
+                  <span class="timeline-period">PAST INTERN</span>
+                </div>
+                <h3 class="timeline-role">Cybersecurity Intern</h3>
+                <div class="timeline-org">
+                  <svg class="svg-icon" style="width: 16px; height: 16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                  Threat Management Team
+                </div>
+                <ul class="timeline-bullets">
+                  <li>Identified 10+ core vulnerabilities across 20+ host endpoints, using active network scanning and manual configurations audits.</li>
+                  <li>Engineered a secure client-server file system with strict Role-Based Access Control (RBAC) and AES-256 validation routines.</li>
+                  <li>Analyzed and triaged 500+ active syslog and audit logs within a Splunk SIEM interface to isolate threat markers.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Intern 3 -->
+            <div class="timeline-item">
+              <div class="timeline-dot-indicator"></div>
+              <div class="timeline-item-card">
+                <div class="timeline-meta">
+                  <span class="timeline-tag">AI & ADVANCED DATA</span>
+                  <span class="timeline-period">PAST INTERN</span>
+                </div>
+                <h3 class="timeline-role">AI / NLP Intern</h3>
+                <div class="timeline-org">
+                  <svg class="svg-icon" style="width: 16px; height: 16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                  Machine Intelligence Lab
+                </div>
+                <ul class="timeline-bullets">
+                  <li>Built and deployed a toxic comment text classifier reaching 85% accuracy using machine learning algorithms.</li>
+                  <li>Optimized data pipelines, transforming data loading layers to accelerate overall pipeline processing speeds by 30%.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Education & Badging Panel -->
+          <div class="edu-container">
+            <h3 class="timeline-role" style="margin-bottom: 25px; display: flex; align-items: center; gap: 10px;">
+              <svg class="svg-icon" style="color: var(--color-violet);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c0 2 2.5 3 6 3s6-1 6-3v-5"></path>
+              </svg>
+              Academic Background
+            </h3>
+            
+            <div class="edu-list">
+              <div class="edu-card">
+                <div class="edu-icon-box">🎓</div>
+                <div class="edu-info">
+                  <h4 class="edu-degree">MSc in Telecommunications Systems</h4>
+                  <span class="edu-school">Sweden (Advanced Network Architectures & Cybersecurity focus)</span>
+                </div>
+              </div>
+              
+              <div class="edu-card">
+                <div class="edu-icon-box">🎓</div>
+                <div class="edu-info">
+                  <h4 class="edu-degree">BTech in Electronics & Communication</h4>
+                  <span class="edu-school">ECE Core Foundations</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-category-card" style="margin-top: 40px; border-color: rgba(157, 78, 221, 0.25);">
+              <h4 style="font-size: 1.1rem; color: var(--color-violet);">Defensive Specializations</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin-top: 5px;">
+                Trained to work in complex infrastructure scenarios:
+              </p>
+              <ul style="font-size: 0.85rem; color: var(--text-muted); padding-left: 20px; line-height: 1.7; margin-top: 10px;">
+                <li><span class="text-gradient-cyan" style="font-weight: 600;">NOC Engineer</span>: Incident lifecycle, traceroute diagnostic pipelines, circuit audits, inter-VLAN routing problems.</li>
+                <li><span class="text-gradient-cyan" style="font-weight: 600;">Network Security</span>: IPSec engineering, packet captures parsing, edge router ACL structures, DDoS mitigation profiles.</li>
+                <li><span class="text-gradient-cyan" style="font-weight: 600;">SOC Analyst</span>: High-volume SIEM alert analysis, signature tuning, triage classifications.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-heading" style="text-align: center; margin-bottom: 30px;">
+          <span class="accent-text">Defensive Engineering Labs</span>
+          <h2 class="section-title">Projects Portfolio</h2>
+        </div>
+
+        <!-- Filter buttons -->
+        <div class="projects-filters">
+          <button class="filter-btn active" data-filter="all">All Labs</button>
+          <button class="filter-btn" data-filter="networks">Network & Infra</button>
+          <button class="filter-btn" data-filter="security">Security & Detection</button>
+          <button class="filter-btn" data-filter="backend">Backend Systems</button>
+          <button class="filter-btn" data-filter="ai">AI / ML Labs</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: HTTP DDoS Detection (Thesis) -->
+          <div class="project-card" data-type="ai">
+            <span class="project-tag-indicator badge-high">AI / Security</span>
+            <div class="project-card-body">
+              <h3 class="project-card-title">HTTP DDoS Detection System</h3>
+              <p class="project-card-desc">
+                My research thesis focused on high-precision detection of application-layer DDoS flood attacks. Built dynamic feature engineering pipelines on the CICIDS2017 dataset, combining ML (LightGBM, KNN) with Explainable AI models (SHAP) to interpret deep classifier decisions.
+              </p>
+              <div class="project-tech-stack">
+                <span class="project-tech-tag">LightGBM</span>
+                <span class="project-tech-tag">CNN-LSTM</span>
+                <span class="project-tech-tag">SHAP</span>
+                <span class="project-tech-tag">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Network Simulation -->
+          <div class="project-card" data-type="networks">
+            <span class="project-tag-indicator badge-medium">Networks</span>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Network Architecture Simulation</h3>
+              <p class="project-card-desc">
+                Designed a complete, scalable enterprise network topology in Cisco Packet Tracer. Configured VLAN trunking, inter-VLAN routing, and Access Control Lists (ACLs) to establish network segmentation and strict perimeter control.
+              </p>
+              <div class="project-tech-stack">
+                <span class="project-tech-tag">Cisco iOS</span>
+                <span class="project-tech-tag">VLAN Routing</span>
+                <span class="project-tech-tag">ACL Rules</span>
+                <span class="project-tech-tag">Packet Tracer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: OpenStack Monitoring -->
+          <div class="project-card" data-type="networks">
+            <span class="project-tag-indicator badge-medium">Cloud / DevOps</span>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Cloud Deployment & Monitoring</h3>
+              <p class="project-card-desc">
+                Automated VM provisioning and network interface attachment on an OpenStack cloud layer using Ansible playbooks. Implemented a telemetry stack with Prometheus metrics exporters feeding into Grafana status dashboards.
+              </p>
+              <div class="project-tech-stack">
+                <span class="project-tech-tag">OpenStack</span>
+                <span class="project-tech-tag">Ansible</span>
+                <span class="project-tech-tag">Prometheus</span>
+                <span class="project-tech-tag">Grafana</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Azure Load Balancer -->
+          <div class="project-card" data-type="networks">
+            <span class="project-tag-indicator badge-low">Cloud</span>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Azure Load Balancer System</h3>
+              <p class="project-card-desc">
+                Configured load balancer traffic routing profiles in Microsoft Azure to distribute high rates of TCP requests across dockerized test nodes. Optimized request limits to handle service outages.
+              </p>
+              <div class="project-tech-stack">
+                <span class="project-tech-tag">Azure</span>
+                <span class="project-tech-tag">Docker</span>
+                <span class="project-tech-tag">HAProxy</span>
+                <span class="project-tech-tag">Load Balancing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Snort IDS -->
+          <div class="project-card" data-type="security">
+            <span class="project-tag-indicator badge-high">Security</span>
+            <div class="project-card-body">
+              <h3 class="project-card-title">IDS Threat Monitoring (Snort)</h3>
+              <p class="project-card-desc">
+                Deployed and tuned a Snort Intrusion Detection System to monitor external interfaces on a private subnet. Built rule filters to intercept specific flood signatures, resulting in less than 5% false-positive alerts.
+              </p>
+              <div class="project-tech-stack">
+                <span class="project-tech-tag">Snort IDS</span>
+                <span class="project-tech-tag">PCAP Analysis</span>
+                <span class="project-tech-tag">Signature Tuning</span>
+                <span class="project-tech-tag">Bash</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: ICMP Mitigation -->
+          <div class="project-card" data-type="security">
+            <span class="project-tag-indicator badge-high">Security</span>
+            <div class="project-card-body">
+              <h3 class="project-card-title">ICMP & DoS Mitigation Labs</h3>
+              <p class="project-card-desc">
+                Simulated rate-limited flooding attacks (Ping of Death, UDP floods) against a target server. Developed custom iptables filters and firewall segments to rate-limit or drop toxic traffic patterns without disrupting user operations.
+              </p>
+              <div class="project-tech-stack">
+                <span class="project-tech-tag">iptables</span>
+                <span class="project-tech-tag">DoS Simulation</span>
+                <span class="project-tech-tag">Network Capture</span>
+                <span class="project-tech-tag">Kernel Tuning</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7: Secure RBAC File System -->
+          <div class="project-card" data-type="backend">
+            <span class="project-tag-indicator badge-high">Backend</span>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Secure Cryptographic RBAC File System</h3>
+              <p class="project-card-desc">
+                Designed a secure client-server API utilizing FastAPI. Built a role checking engine (RBAC) to control read/write execution thresholds, paired with cryptography mechanisms (AES-GCM encryption at rest, secure handshakes).
+              </p>
+              <div class="project-tech-stack">
+                <span class="project-tech-tag">FastAPI</span>
+                <span class="project-tech-tag">Cryptography</span>
+                <span class="project-tech-tag">RBAC</span>
+                <span class="project-tech-tag">Pytest</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8: Async TCP Server -->
+          <div class="project-card" data-type="backend">
+            <span class="project-tag-indicator badge-medium">Backend</span>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Multi-Client TCP File Server</h3>
+              <p class="project-card-desc">
+                Programmed an asynchronous, multi-client TCP network socket server using Python's asyncio module. Handled simultaneous file downloads, verification checksum checks, and concurrent connection pool limits.
+              </p>
+              <div class="project-tech-stack">
+                <span class="project-tech-tag">TCP Sockets</span>
+                <span class="project-tech-tag">asyncio</span>
+                <span class="project-tech-tag">Checksums</span>
+                <span class="project-tech-tag">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 9: LLM Threat Modeling -->
+          <div class="project-card" data-type="ai">
+            <span class="project-tag-indicator badge-medium">AI / Security</span>
+            <div class="project-card-body">
+              <h3 class="project-card-title">LLM Prompt Injection Threat Modeler</h3>
+              <p class="project-card-desc">
+                Analyzed and categorized prompt injection vectors (indirect prompt injection, jailbreaks) in Large Language Models. Built an assessment matrix testing defense strategies including input sanitization and prompt wrappers.
+              </p>
+              <div class="project-tech-stack">
+                <span class="project-tech-tag">LLMs</span>
+                <span class="project-tech-tag">Threat Modeling</span>
+                <span class="project-tech-tag">Sanitization</span>
+                <span class="project-tech-tag">Security Testing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 10: Meurs Platform -->
+          <div class="project-card" data-type="backend">
+            <span class="project-tag-indicator badge-low">Real-Time</span>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Meurs Real-Time Game Platform</h3>
+              <p class="project-card-desc">
+                Developed a real-time multiplayer application leveraging WebSockets for instant state synchronization. Integrated an LLM-based game engine to dynamically coordinate user actions and narrate matches.
+              </p>
+              <div class="project-tech-stack">
+                <span class="project-tech-tag">WebSockets</span>
+                <span class="project-tech-tag">LLM Engine</span>
+                <span class="project-tech-tag">Node.js</span>
+                <span class="project-tech-tag">Real-Time Sync</span>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background: rgba(12, 16, 32, 0.35);">
+      <div class="container">
+        <div class="section-heading" style="text-align: center; margin-bottom: 50px;">
+          <span class="accent-text">Transmit Signal</span>
+          <h2 class="section-title">Contact Me</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-panel">
+            <!-- Email -->
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Secure Email</span>
+                <a href="mailto:phanidatta0406@gmail.com" class="contact-value text-gradient-cyan">phanidatta0406@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Mobile Hotline</span>
+                <span class="contact-value">+46 705494589</span>
+              </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Secure Repositories</span>
+                <a href="https://github.com/Sriphani2001" target="_blank" class="contact-value text-gradient-cyan">github.com/Sriphani2001</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-panel">
+            <form id="contact-form" action="" method="post">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Identifier (Name)</label>
+                <input type="text" id="form-name" class="form-input" placeholder="Your name..." required />
+              </div>
+              <div class="form-group">
+                <label for="form-email" class="form-label">Return Address (Email)</label>
+                <input type="email" id="form-email" class="form-input" placeholder="Your email..." required />
+              </div>
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject Header</label>
+                <input type="text" id="form-subject" class="form-input" placeholder="Subject..." required />
+              </div>
+              <div class="form-group">
+                <label for="form-message" class="form-label">Payload Message</label>
+                <textarea id="form-message" class="form-input" placeholder="Your message..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                Transmit Message
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container" style="padding: 0;">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span>SP</span>Deverakonda
+          </div>
+          <p class="footer-text">
+            © 2026 Sri Phani Deverakonda. All rights reserved. Encrypted Connection.
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script>
-      // Navigation handling for scrolling sections
-      $(".main-menu li:first").addClass("active");
-
-      var showSection = function showSection(section, isAnimate) {
-        var direction = section.replace(/#/, ""),
-          reqSection = $(".section").filter('[data-section="' + direction + '"]'),
-          reqSectionPos = reqSection.offset().top;
-        if (isAnimate) {
-          $("body, html").animate(
-            { scrollTop: reqSectionPos },
-            800
-          );
-        } else {
-          $("body, html").scrollTop(reqSectionPos);
-        }
-      };
-
-      var checkSection = function checkSection() {
-        $(".section").each(function() {
-          var $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-          if (topEdge < wScroll && bottomEdge > wScroll) {
-            var currentId = $this.data("section"),
-              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-            reqLink.closest("li")
-              .addClass("active")
-              .siblings().removeClass("active");
-          }
-        });
-      };
-
-      $(".main-menu").on("click", "a", function(e) {
-        e.preventDefault();
-        showSection($(this).attr("href"), true);
-      });
-
-      $(window).scroll(function() {
-        checkSection();
-      });
-    </script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
